@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+//    "eslint:recommended",
+//    "plugin:@typescript-eslint/eslint-recommended",
+//    "plugin:@typescript-eslint/recommended"
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:react-hooks/recommended"
+  ],
+  "rules": {
+    "import/prefer-default-export": "warn",
+    "import/no-extraneous-dependencies": "warn",
+    "react/function-component-definition": "off",
+    "react/jsx-props-no-spreading": "warn",
+    "react/require-default-props": "off"
+  }
+}
